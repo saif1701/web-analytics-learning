@@ -106,7 +106,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </main>
 
-  <script src="script.js"></script>
+  <script>
+    const shopBtn = document.getElementById("shopBtn");
+
+shopBtn.addEventListener("click", () => {
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({
+    event: "product_selected"
+  });
+});
+  </script>
 
 </body>
 </html>
