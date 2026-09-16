@@ -112,8 +112,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 shopBtn.addEventListener("click", () => {
   window.dataLayer = window.dataLayer || [];
 
-  window.dataLayer.push({
-    event: "product_selected"
+   window.dataLayer.push({
+    event: "product_selected",
+    product_name: "Analytics Course",
+    product_price: 999,
+    product_category: "Course"
   });
 });
   </script>
